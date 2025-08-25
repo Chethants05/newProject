@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    165deg,
+    rgb(246, 230, 87),
+    rgb(43, 150, 196),
+    rgb(61, 225, 77),
+    rgb(230, 116, 215)
+  );
+  background-size: 600% 600%;
+  animation: colorchange 5s infinite ease-in-out;
+}
+@keyframes colorchange {
+  0% {
+    background-position: 0% 40%;
+  }
+  25% {
+    background-position: 80% 40%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  75% {
+    background-position: 80% 40%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+form {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(244, 222, 222, 0.2);
+  border-radius: 30px;
+}
+h1 {
+  color: black;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 230px;
+}
+input {
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+#submitbtn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid rgb(7, 172, 7);
+  color: green;
+  background-color: transparent;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.8s;
+}
+#resetbtn {
+  padding: 10px 15px;
+  font-weight: bold;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.8s;
+}
+#submitbtn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
+  transition-duration: 0.8s;
+  background-color: rgb(7, 172, 7);
+  color: white;
+}
+#resetbtn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
+  transition-duration: 0.8s;
+  background-color: red;
+  color: white;
+}
+a {
+  display: flex;
+  text-align: start;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
